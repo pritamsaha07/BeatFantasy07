@@ -1,0 +1,173 @@
+
+.App {
+  text-align: center;
+}
+
+
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  position: relative;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.red-line {
+  background-color: red;
+  height: 3px;
+  width: 7%;
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+  transition: left 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .navbar ul li {
+    margin-right: 10px;
+  }
+
+  .red-line {
+    display: none;
+  }
+}
+
+.red-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar li:hover ~ .red-line {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+  }
+
+  .navbar ul li {
+    margin-right: 10px; 
+  }
+
+  .red-line {
+    display: none; 
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul li {
+    margin-right: 5px; 
+  }
+}
+
+.chart{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+.wickets-breakdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wickets-line {
+  position: relative;
+  height: 8px; 
+  width: 200px; 
+  background-color: #f2f2f2; 
+  border-radius: 4px; 
+}
+.progress-bars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  margin-right: 20px; 
+}
+
+.wickets-line {
+  position: relative;
+  height: 8px; 
+  width: 200px; 
+  background-color: #f2f2f2; 
+  border-radius: 4px;}
+
+.progress-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 4px; 
+}
+
+.progress-bar:nth-child(1) .progress-line {
+  background-color: #FF9933; 
+}
+
+.progress-bar:nth-child(2) .progress-line {
+  background-color: yellow; 
+}
+
+.progressLine {
+  display: flex;
+  height: 8px;
+  width: 100%;
+  background-color: #f2f2f2; 
+  border-radius: 4px;
+}
+
+.blueProgress {
+  background-color: blue;
+  border-radius: 4px 0 0 4px; 
+}
+
+.redProgress {
+  background-color: red; 
+  border-radius: 0 4px 4px 0;
+}
+.pieChartContainer {
+  width: 90%; 
+  max-width: 400px; 
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+.PieChart {
+  width: 100%;
+  height: 100%;
+}
